@@ -1,0 +1,13 @@
+.row{
+    text-align: center;
+}
+h1{
+ text-align: center;margin: 2%;
+}
+
+select{
+    color: black;
+    background-color: rgb(252, 241, 228);
+    width: 50%;
+    height: 40px;
+}

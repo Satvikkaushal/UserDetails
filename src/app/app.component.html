@@ -1,0 +1,15 @@
+<div>
+  <h1>User Details </h1>
+  <div class="row">
+    <div class="col-3">
+      <select (change)='onOptionsSelected($event.target.value)'>
+        <option selected>Select Name</option>
+        <option *ngFor="let user of users">{{user.first_name}} {{user.last_name}}</option>
+      </select>
+    </div>
+    <div class="col-9">
+      <app-user-info *ngIf="showInfo" id={{userId}}></app-user-info>
+      <img width="40%" src="https://cdn.lowgif.com/full/79d8b7408bfd1f90-keep-working-by-jesse-luo-dribbble.gif">
+    </div>
+  </div>
+</div>
